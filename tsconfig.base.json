@@ -15,7 +15,8 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
-			"@bbt-feature-flags/feature-flags": ["libs/feature-flags/src/index.ts"]
+			"@bbt-feature-flags/feature-flags": ["libs/feature-flags/src/index.ts"],
+			"@bbt-feature-flags/home": ["libs/home/src/index.ts"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]
