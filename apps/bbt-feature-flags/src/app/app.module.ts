@@ -7,10 +7,17 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { FeatureFlagsModule } from '@bbt-feature-flags/feature-flags';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [AppComponent, NxWelcomeComponent, NavbarComponent, FooterComponent],
-	imports: [BrowserModule, RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' })],
+	imports: [
+		BrowserModule,
+		HttpClientModule,
+		RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+		FeatureFlagsModule.forRoot({ defaultToFlagOff: true, jsonUrl: 'assets/feature-flags.json' }),
+	],
 	providers: [],
 	bootstrap: [AppComponent],
 })
