@@ -4,3 +4,5 @@ export * from './lib/models/feature-flag.interface';
 export * from './lib/models/feature-flags-config.class';
 
 export * from './lib/service/feature-flags.service';
+
+export * from './lib/guard/feature-flag.guard';
