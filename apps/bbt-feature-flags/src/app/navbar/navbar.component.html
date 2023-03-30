@@ -29,11 +29,12 @@
 			</button>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">
-			<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Comic Books</a>
-
-			<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Sale</a>
-
-			<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Signing</a>
+			<a
+				*ngFor="let link of links$ | async"
+				[routerLink]="[link.path]"
+				class="text-sm font-semibold leading-6 text-gray-900"
+				>{{ link.label }}</a
+			>
 		</div>
 	</nav>
 	<!-- Mobile menu, show/hide based on menu open state. -->
