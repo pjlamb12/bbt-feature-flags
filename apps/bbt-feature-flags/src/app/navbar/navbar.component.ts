@@ -17,7 +17,7 @@ export class NavbarComponent {
 				},
 			];
 
-			if (this._flags.isFeatureEnabled('saleActive')) {
+			if (this._flags.isFeatureEnabled('saleActiveBanner')) {
 				links.push({
 					label: 'Sale',
 					path: '/sale',

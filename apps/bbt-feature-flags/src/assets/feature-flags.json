@@ -1,3 +1,4 @@
 {
-	"saleActive": true
+	"saleActiveBanner": true,
+	"saleActiveRoute": true
 }
