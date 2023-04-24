@@ -1,19 +1,213 @@
 <div class="relative">
-	<p
+	<div>
+		<img
+		src="/assets/images/comic_book_sale_banner.png"
+		alt="comic books banner">
+	</div>
+	<!-- <p
 		class="w-full flex items-center justify-center gap-x-6 bg-yellow-500 py-8 px-6 sm:px-3.5 absolute top-0 left-0 right-0 z-10"
 		*bbtFeatureFlag="'saleActiveBanner'"
 	>
 		<span class="text-lg font-bold uppercase leading-6 text-white">Special ng-conf Sale!!!</span>
-	</p>
+	</p> -->
 
 	<div class="relative bg-white">
 		<div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-			<div class="px-6 pt-10 pb-24 sm:pb-32 lg:px-0 lg:pt-48 lg:pb-56 col-span-12">
+			<div class="px-6 pt-10 pb-24 sm:pb-16 lg:px-0 lg:pb-12 col-span-12">
 				<div class="mx-auto w-full lg:mx-0">
-					<h1 class="mt-24 text-4xl text-center font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
-						There's a big sale going on!
+					<h1 class="page-title  text-center font-bold tracking-tight text-gray-900 sm:text-6xl">
+						It's Like Comic-Con But With Lower Prices!
 					</h1>
-					<img class="mt-12 w-1/2 mx-auto" src="/assets/images/cast.webp" alt="" />
+					<div class="book-container mt-8 p-4 container mx-auto">
+						<ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/captain_marvel_cover.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Captain Marvel</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									Captain Marvel #1
+								</p>
+								<p class="sale-cost">$1.99</p>
+								<p class="cost">$3.99</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+							</li>
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg  focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/star_wars_cover_white.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Star Wars #1</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									Star Wars #1
+								</p>
+								<p class="sale-cost">$2.49</p>
+								<p class="cost">$4.99</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+				
+							</li>
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg  focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/daredevil_cover.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Daredevil #9</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									Daredevil #9
+								</p>
+								<p class="sale-cost">$1.49</p>
+								<p class="cost">$2.99</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+							</li>
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg  focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/flash_gordon_cover.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Flash Gordon</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									Flash Gordon #3
+								</p>
+								<p class="sale-cost">$.99</p>
+								<p class="cost">$1.99</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+							</li>
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg  focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/star_wars_cover_IG.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Star Wars #21</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									Star Wars #21
+								</p>
+								<p class="sale-cost">$2.99</p>
+								<p class="cost">$5.99</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+							</li>
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg  focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/marvel_tales_cover.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Marvel Tales</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									Marvel Tales Starring Spider-Man
+								</p>
+								<p class="sale-cost">$1.75</p>
+								<p class="cost">$3.49</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+							</li>
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg  focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/guardians_cover.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Guardians of the Galaxy</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									Guardians of the Galaxy #2
+								</p>
+								<p class="sale-cost">$2.49</p>
+								<p class="cost">$4.99</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+							</li>
+							<li class="comic-book-container">
+								<div
+									class="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg  focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+								>
+									<img
+										src="/assets/images/batman_cover.png"
+										alt=""
+										class="pointer-events-none object-contain group-hover:opacity-75"
+									/>
+									<button type="button" class="absolute inset-0 focus:outline-none">
+										<span class="sr-only">View Batman</span>
+									</button>
+								</div>
+								<p class="comic-name pointer-events-none mt-2 block truncate text-center text-md font-medium text-gray-900">
+									All*Star Batman #11
+								</p>
+								<p class="sale-cost">$1.99</p>
+								<p class="cost">$3.99</p>
+								<a
+									class="cart-button rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+									>Add to Cart
+								</a>
+							</li>
+							<!-- More files... -->
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
