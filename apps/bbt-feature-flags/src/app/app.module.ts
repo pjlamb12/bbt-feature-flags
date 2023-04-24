@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 		BrowserModule,
 		HttpClientModule,
 		RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
-		FeatureFlagsModule.forRoot({ defaultToFlagOff: true, jsonUrl: 'assets/feature-flags.json' }),
+		FeatureFlagsModule.forRoot({ defaultToFlagOff: true, jsonUrl: 'assets/feature-flags.json' }),	
 	],
 	providers: [],
 	bootstrap: [AppComponent],
